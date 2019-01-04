@@ -41,4 +41,4 @@ RUN cd /qcadoo/qcadoo-super-pom-open \
 
 EXPOSE 8080
 
-ENTRYPOINT ["/qcadoo/mes/mes-application/target/tomcat-archiver/mes-application/bin/startup.sh"]
+#ENTRYPOINT ["/qcadoo/mes/mes-application/target/tomcat-archiver/mes-application/bin/startup.sh"]

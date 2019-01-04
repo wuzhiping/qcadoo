@@ -41,6 +41,8 @@ RUN cd /qcadoo/qcadoo-super-pom-open \
 
 WORKDIR  /
 RUN wget https://github.com/qcadoo/mes/releases/download/1.9.20/qcadoo-mes-1.9.20.zip
+
+RUN apt-get install -y zip
 RUN unzip qcadoo-mes-1.9.20.zip
 
 EXPOSE 8080

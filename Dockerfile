@@ -39,6 +39,10 @@ RUN cd /qcadoo/qcadoo-super-pom-open \
 	&& cd /qcadoo/mes/mes-application/target/tomcat-archiver/mes-application \
 	&& chmod a+x ./bin/*.sh
 
+WORKDIR  /
+RUN wget https://github.com/qcadoo/mes/releases/download/1.9.20/qcadoo-mes-1.9.20.zip
+RUN unzip qcadoo-mes-1.9.20.zip
+
 EXPOSE 8080
 
 #ENTRYPOINT ["/qcadoo/mes/mes-application/target/tomcat-archiver/mes-application/bin/startup.sh"]
